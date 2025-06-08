@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Спортивный комплекс "Фитнес-Хаус"</title>
+    <link rel="stylesheet" href="styles/style_serv.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><i class="fas fa-dumbbell"></i> Спортивный комплекс "Фитнес-Хаус"</h1>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-dumbbell"></i> Запись на приём</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Расписание</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="javascript:void(0)" class="button login-button" onclick="openLoginModal()"><i class="fas fa-sign-in-alt"></i> Вход</a>
+                    <a href="javascript:void(0)" class="button register-button" onclick="openRegisterModal()"><i class="fas fa-user-plus"></i> Регистрация</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Наши услуги</h1>
+                <p>Спортивный комплекс "Фитнес-Хаус" предлагает широкий спектр услуг для поддержания здоровья и хорошей физической формы.</p>
+                <a href="#pricing" class="cta-button">Записаться</a>
+            </section>
+            
+            <section class="services">
+                <h2>Основные услуги</h2>
+                <p class="text-center">Выберите подходящую для вас программу тренировок</p>
+                
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                        <div class="service-info">
+                            <h3>Тренажерный зал</h3>
+                            <p>Современное оборудование от ведущих мировых производителей для всех групп мышц.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> 7:00 - 23:00</span>
+                                <span class="service-price">от 2 500 руб/мес</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="service-info">
+                            <h3>Групповые занятия</h3>
+                            <p>Йога, пилатес, аэробика, танцы, кроссфит и многое другое в группах до 15 человек.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> По расписанию</span>
+                                <span class="service-price">от 300 руб/занятие</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="service-info">
+                            <h3>Персональные тренировки</h3>
+                            <p>Индивидуальный подход и программа тренировок, разработанная специально для вас.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> По записи</span>
+                                <span class="service-price">от 1 500 руб/тренировка</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="service-info">
+                            <h3>Детский фитнес</h3>
+                            <p>Специальные программы для детей от 3 лет: гимнастика, единоборства, танцы.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> 16:00 - 20:00</span>
+                                <span class="service-price">от 2 000 руб/мес</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="service-info">
+                            <h3>Бассейн и аквааэробика</h3>
+                            <p>25-метровый бассейн, аквааэробика, обучение плаванию для взрослых и детей.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> 8:00 - 22:00</span>
+                                <span class="service-price">от 500 руб/посещение</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="service-info">
+                            <h3>SPA и массаж</h3>
+                            <p>Расслабляющие и лечебные массажи, сауна, хаммам, соляная комната.</p>
+                            <div class="service-meta">
+                                <span><i class="fas fa-clock"></i> 10:00 - 21:00</span>
+                                <span class="service-price">от 1 200 руб/сеанс</span>
+                            </div>
+                            <a href="#" class="service-button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="facilities">
+                <div class="container">
+                    <h2>Наше оборудование и помещения</h2>
+                    <p class="text-center">Современная инфраструктура для комфортных тренировок</p>
+                    
+                    <div class="facility-grid">
+                        <div class="facility-card">
+                            <div class="facility-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h3>Тренажеры</h3>
+                            <p>Более 100 современных тренажеров от TechnoGym, Hammer Strength и Life Fitness</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-icon">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <h3>Бассейн</h3>
+                            <p>25-метровый бассейн с 4 дорожками и зоной для аквааэробики</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3>SPA-зона</h3>
+                            <p>Финская сауна, турецкий хаммам, соляная комната и массажные кабинеты</p>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Фитнес-бар</h3>
+                            <p>Полезные перекусы, протеиновые коктейли и спортивное питание</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="testimonials">
+                <h2>Отзывы о наших услугах</h2>
+                <p class="text-center">Что говорят наши клиенты о качестве наших услуг</p>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Занимаюсь персональными тренировками с Дмитрием уже 6 месяцев. Результат превзошел все ожидания - минус 12 кг, рельефные мышцы и отличное самочувствие. Тренер профессионал, всегда подбирает оптимальную нагрузку.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                            <div class="author-info">
+                                <h4>Сергей Волков</h4>
+                                <p>Клиент 6 месяцев</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Очень нравятся групповые занятия по йоге с Екатериной. После каждого занятия чувствую себя обновленной. За год занятий исчезли боли в спине, улучшилась осанка и гибкость. Рекомендую всем!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+                            <div class="author-info">
+                                <h4>Анна Ковалева</h4>
+                                <p>Клиент 1 год</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>Привожу сына на детский фитнес уже второй год. Вижу, как он стал более дисциплинированным, сильным и уверенным в себе. Тренеры умеют найти подход к детям, занятия проходят весело и продуктивно.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg');"></div>
+                            <div class="author-info">
+                                <h4>Ольга Морозова</h4>
+                                <p>Клиент 2 года</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="newsletter">
+                <h2>Узнайте о новых услугах первыми</h2>
+                <p>Подпишитесь на рассылку и получайте информацию о новых программах, акциях и специальных предложениях.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Тренажерный зал</a></li>
+                        <li><a href="#">Групповые занятия</a></li>
+                        <li><a href="#">Персональные тренировки</a></li>
+                        <li><a href="#">Детский фитнес</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>г. Москва, ул. Спортивная, д. 15</li>
+                        <li>+7 (495) 123-45-67</li>
+                        <li>info@fitnesshouse.ru</li>
+                        <li>Пн-Вс: 7:00 - 23:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Спортивный комплекс "Фитнес-Хаус". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Нет аккаунта? <a href="javascript:void(0)" onclick="openRegisterModal()">Зарегистрируйтесь</a></p>
+        </div>
+    </div>
+    
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Уже есть аккаунт? <a href="javascript:void(0)" onclick="openLoginModal()">Войдите</a></p>
+        </div>
+    </div>
+    
+    <script>
+        // Функции для работы с модальными окнами
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+        
+        function openRegisterModal() {
+            document.getElementById('registerModal').style.display = 'block';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        // Закрытие модального окна при клике вне его
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>

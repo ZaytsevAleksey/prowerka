@@ -1,154 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hospital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-  <header class="header">
-    <div class="container header__inner">
-      <div class="logo">Hospital</div>
-      <nav class="nav">
-        <a href="#" class="nav_link">Главная</a>
-        <a href="#" class="nav_link">Расписание</a>
-        <a href="#" class="nav_link">Медицинская карта</a>
-        <a href="#" class="nav_link">О нас</a>
-      </nav>
-      <div class="header__buttons">
-        <button class="btn btn--outline">Вход</button>
-        <button class="btn btn--filled">Регистрация</button>
-      </div>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><i class="fas fa-dumbbell"></i> Спортивный комплекс "Фитнес-Хаус"</h1>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="services.html"><i class="fas fa-dumbbell"></i> Запись на приём</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Расписание</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="javascript:void(0)" class="button login-button" onclick="openLoginModal()"><i class="fas fa-sign-in-alt"></i> Вход</a>
+                    <a href="javascript:void(0)" class="button register-button" onclick="openRegisterModal()"><i class="fas fa-user-plus"></i> Регистрация</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Преобразите свое тело и разум</h1>
+                <p>Спортивный комплекс "Фитнес-Хаус" предлагает современное оборудование, профессиональных тренеров и индивидуальный подход к каждому клиенту.</p>
+                <a href="#pricing" class="cta-button">Начать тренировки</a>
+            </section>
+            
+            <section class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Здоровье</h3>
+                    <p>Наши программы помогут вам улучшить здоровье, повысить выносливость и укрепить иммунитет.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Тренировки</h3>
+                    <p>Современное оборудование и разнообразные тренировочные программы для всех уровней подготовки.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Сообщество</h3>
+                    <p>Присоединяйтесь к нашему дружному сообществу единомышленников, которые поддерживают друг друга.</p>
+                </div>
+            </section>
+            
+            <section class="trainers">
+                <h2>Наши тренеры</h2>
+                <p class="text-center">Профессиональные тренеры с многолетним опытом помогут вам достичь ваших целей.</p>
+                
+                <div class="trainer-grid">
+                    <div class="trainer-card">
+                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="trainer-info">
+                            <h3>Алексей Петров</h3>
+                            <p>Фитнес-тренер, специалист по силовым тренировкам</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card">
+                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="trainer-info">
+                            <h3>Екатерина Смирнова</h3>
+                            <p>Инструктор по йоге и пилатесу</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card">
+                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="trainer-info">
+                            <h3>Дмитрий Иванов</h3>
+                            <p>Тренер по кроссфиту и функциональному тренингу</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card">
+                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
+                        <div class="trainer-info">
+                            <h3>Анна Козлова</h3>
+                            <p>Специалист по аэробике и танцевальным направлениям</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Тренажерный зал</a></li>
+                        <li><a href="#">Групповые занятия</a></li>
+                        <li><a href="#">Персональные тренировки</a></li>
+                        <li><a href="#">Детский фитнес</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>г. Москва, ул. Спортивная, д. 15</li>
+                        <li>+7 (495) 123-45-67</li>
+                        <li>info@fitnesshouse.ru</li>
+                        <li>Пн-Вс: 7:00 - 23:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Спортивный комплекс "Фитнес-Хаус". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Нет аккаунта? <a href="javascript:void(0)" onclick="openRegisterModal()">Зарегистрируйтесь</a></p>
+        </div>
     </div>
-  </header>
-
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="hero__col hero__col--text">
-        <h1 class="hero__title1">
-          Добро пожаловать<br/>
-        </h1>
-        <h2 class="hero__title2">
-          в электронную систему больницы
-        </h2>
-        <p class="hero__subtitle">
-          Записывайтесь на приём к врачу, просматривайте историю посещений, получайте уведомления и многое другое.
-        </p>
-      </div>
+    
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Уже есть аккаунт? <a href="javascript:void(0)" onclick="openLoginModal()">Войдите</a></p>
+        </div>
     </div>
-  </section>
-
-
-  <section class="feature feature--img-right">
-    <div class="container feature__inner">
-      <div class="feature__text">
-        <h2 class="section-title">Turpis risus facilisi</h2>
-        <p class="feature__desc">
-            Augue feugiat mi, massa amet. Id purus aliquam bibendum purus dictum elementum nullam odio tellus. Imperdiet feugiat est odio fames magna orci. Augue purus aliquam, placerat vestibulum dictum pellentesque molestie. Facilisis pretium porta congue proin.
-        </p>
-      </div>
-      <div class="feature__media">
-        <img src="img/Col1.png" alt="video"/>
-      </div>
-    </div>
-  </section>
-
-  <section class="feature feature--img-left">
-    <div class="container feature__inner">
-      <div class="feature__media">
-        <img src="img/Col2.png" alt="mobile1"/>
-      </div>
-      <div class="feature__text">
-        <h2 class="section-title">Sagittis sapien viverra</h2>
-        <p class="feature__desc">
-            Id turpis ante nunc, id tempor. Diam, eros, eget suspendisse dolor tellus. Diam fringilla sed volutpat facilisi. Pulvinar vulputate facilisis vel eros. Auctor metus sed auctor tortor sed nulla. Urna massa eu vel blandit sed nisi gravida. Imperdiet parturient at purus bibendum risus auctor lacus tristique arcu. Arcu hac cursus faucibus id. Eu integer parturient risus magna eget massa. Risus molestie tempor, faucibus non ultricies. Nam vel mattis quis dui, condimentum mi volutpat ut aliquam.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="feature feature--img-right alt-bg">
-    <div class="container feature__inner">
-      <div class="feature__text">
-        <h2 class="section-title">Non commodo nec</h2>
-        <p class="feature__desc">
-            Laoreet amet, lacus sed faucibus. Nec, natoque semper rutrum dui. Curabitur in commodo pretium lacinia feugiat. A ultricies quis commodo, nisl, vestibulum, feugiat dolor. Tincidunt orci consequat, pellentesque leo dui nunc ac, amet. A proin pulvinar nec nibh bibendum. Nec mi mattis vulputate dictum platea pharetra, id id.
-        </p>
-      </div>
-      <div class="feature__media">
-        <img src="img/Col3.png" alt="mobile2"/>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="container cta__inner">
-      <div class="cta__media">
-        <img src="img/Desktop.png" alt="Desktop img"/>
-      </div>
-      <div class="cta__text">
-        <h2 class="section-title">Launch Your App Today</h2>
-        <p class="cta__desc">
-          Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar.
-        </p>
-        <button class="btn btn--filled">Free Launch</button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__col">
-        <div class="logo logo--footer">mabi</div>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__title">Product</h4>
-        <a href="#">Pricing</a>
-        <a href="#">Overview</a>
-        <a href="#">Browse</a>
-        <a href="#">Accessibility</a>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__title">Solutions</h4>
-        <a href="#">Brainstorming</a>
-        <a href="#">Ideation</a>
-        <a href="#">Wireframing</a>
-        <a href="#">Research</a>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__title">Resources</h4>
-        <a href="#">Help Center</a>
-        <a href="#">Blog</a>
-        <a href="#">Tutorials</a>
-        <a href="#">FAQs</a>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__title">Support</h4>
-        <a href="#">Contact Us</a>
-        <a href="#">Developers</a>
-        <a href="#">Documentation</a>
-        <a href="#">Integrations</a>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__title">Integrations</h4>
-        <a href="#">About</a>
-        <a href="#">Press</a>
-        <a href="#">Events</a>
-        <a href="#">Request Demo</a>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>@ 2023 Mabi. All rights reserved.</p>
-      <div>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-        <a href="#">Cookies</a>
-      </div>
-    </div>
-  </footer>
-
+    
+    <script>
+        // Функции для работы с модальными окнами
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+        
+        function openRegisterModal() {
+            document.getElementById('registerModal').style.display = 'block';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        // Закрытие модального окна при клике вне его
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
