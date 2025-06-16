@@ -1,219 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <title>Городская больница</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1><i class="fas fa-dumbbell"></i> Спортивный комплекс "Фитнес-Хаус"</h1>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
-                    <li><a href="services.html"><i class="fas fa-dumbbell"></i> Запись на приём</a></li>
-                    <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Расписание</a></li>
-                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
-                </ul>
-                <div class="auth-buttons">
-                    <a href="javascript:void(0)" class="button login-button" onclick="openLoginModal()"><i class="fas fa-sign-in-alt"></i> Вход</a>
-                    <a href="javascript:void(0)" class="button register-button" onclick="openRegisterModal()"><i class="fas fa-user-plus"></i> Регистрация</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h1>Преобразите свое тело и разум</h1>
-                <p>Спортивный комплекс "Фитнес-Хаус" предлагает современное оборудование, профессиональных тренеров и индивидуальный подход к каждому клиенту.</p>
-                <a href="#pricing" class="cta-button">Начать тренировки</a>
-            </section>
-            
-            <section class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Здоровье</h3>
-                    <p>Наши программы помогут вам улучшить здоровье, повысить выносливость и укрепить иммунитет.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3>Тренировки</h3>
-                    <p>Современное оборудование и разнообразные тренировочные программы для всех уровней подготовки.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Сообщество</h3>
-                    <p>Присоединяйтесь к нашему дружному сообществу единомышленников, которые поддерживают друг друга.</p>
-                </div>
-            </section>
-            
-            <section class="trainers">
-                <h2>Наши тренеры</h2>
-                <p class="text-center">Профессиональные тренеры с многолетним опытом помогут вам достичь ваших целей.</p>
-                
-                <div class="trainer-grid">
-                    <div class="trainer-card">
-                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
-                        <div class="trainer-info">
-                            <h3>Алексей Петров</h3>
-                            <p>Фитнес-тренер, специалист по силовым тренировкам</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="trainer-card">
-                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
-                        <div class="trainer-info">
-                            <h3>Екатерина Смирнова</h3>
-                            <p>Инструктор по йоге и пилатесу</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="trainer-card">
-                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
-                        <div class="trainer-info">
-                            <h3>Дмитрий Иванов</h3>
-                            <p>Тренер по кроссфиту и функциональному тренингу</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="trainer-card">
-                        <div class="trainer-img" style="background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');"></div>
-                        <div class="trainer-info">
-                            <h3>Анна Козлова</h3>
-                            <p>Специалист по аэробике и танцевальным направлениям</p>
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>О нас</h3>
-                    <ul>
-                        <li><a href="#">История</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Блог</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Услуги</h3>
-                    <ul>
-                        <li><a href="#">Тренажерный зал</a></li>
-                        <li><a href="#">Групповые занятия</a></li>
-                        <li><a href="#">Персональные тренировки</a></li>
-                        <li><a href="#">Детский фитнес</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Контакты</h3>
-                    <ul>
-                        <li>г. Москва, ул. Спортивная, д. 15</li>
-                        <li>+7 (495) 123-45-67</li>
-                        <li>info@fitnesshouse.ru</li>
-                        <li>Пн-Вс: 7:00 - 23:00</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-vk"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Спортивный комплекс "Фитнес-Хаус". Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Модальное окно входа -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('loginModal')">&times;</span>
-            <h2>Вход в аккаунт</h2>
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Пароль" required>
-                <button type="submit">Войти</button>
-            </form>
-            <p style="text-align: center; margin-top: 1rem;">Нет аккаунта? <a href="javascript:void(0)" onclick="openRegisterModal()">Зарегистрируйтесь</a></p>
-        </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Городская больница</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link active">Главная</a>
+        <a href="services.html" class="nav__link">Услуги</a>
+        <a href="appointment.html" class="nav__link">Запись</a>
+        <a href="personal.html" class="nav__link nav__link--auth">Моя карта</a>
+        <a href="about.html" class="nav__link">О нас</a>
+      </nav>
+      <div class="auth">
+        <button id="btnLogin" class="btn btn--outline">Вход</button>
+        <button id="btnRegister" class="btn btn--primary">Регистрация</button>
+        <button id="btnLogout" class="btn btn--outline" style="display:none;">Выход</button>
+      </div>
     </div>
-    
-    <!-- Модальное окно регистрации -->
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('registerModal')">&times;</span>
-            <h2>Регистрация</h2>
-            <form>
-                <input type="text" placeholder="Имя" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Пароль" required>
-                <input type="password" placeholder="Подтвердите пароль" required>
-                <button type="submit">Зарегистрироваться</button>
-            </form>
-            <p style="text-align: center; margin-top: 1rem;">Уже есть аккаунт? <a href="javascript:void(0)" onclick="openLoginModal()">Войдите</a></p>
-        </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <div class="slider">
+      <div class="slide"><img src="images/970337cf25cf3f5075584322f7abf9e7.jpg" alt="Слайд 1"></div>
+      <div class="slide"><img src="images/i (1).webp" alt="Слайд 2"></div>
+      <div class="slide"><img src="images/i (2).webp" alt="Слайд 3"></div>
     </div>
-    
-    <script>
-        // Функции для работы с модальными окнами
-        function openLoginModal() {
-            document.getElementById('loginModal').style.display = 'block';
-        }
-        
-        function openRegisterModal() {
-            document.getElementById('registerModal').style.display = 'block';
-        }
-        
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-        
-        // Закрытие модального окна при клике вне его
-        window.onclick = function(event) {
-            if (event.target.className === 'modal') {
-                event.target.style.display = 'none';
-            }
-        }
-    </script>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h2>Отзывы пациентов</h2>
+      <div class="testimonials__list">
+        <blockquote>
+          <p>Спасибо за внимательное отношение и профессионализм!</p>
+          <footer>— Сергей</footer>
+        </blockquote>
+        <blockquote>
+          <p>Быстро записали, удобное время приёма.</p>
+          <footer>— Ольга</footer>
+        </blockquote>
+        <blockquote>
+          <p>Современное оборудование и приветливый персонал.</p>
+          <footer>— Дмитрий</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news">
+      <h2>Новости клиники</h2>
+      <div class="news__grid">
+        <article>
+          <img src="images/i (3).webp" alt="Рентген">
+          <h3>Новый цифровой рентген</h3>
+          <p>Мы установили современный цифровой рентген-аппарат для быстрейшей диагностики.</p>
+          <a href="#">Читать →</a>
+        </article>
+        <article>
+          <img src="images/i (4).webp" alt="Скидки">
+          <h3>Скидки на обследования</h3>
+          <p>В этом месяце – 20% на полное медицинское обследование.</p>
+          <a href="#">Читать →</a>
+        </article>
+        <article>
+          <img src="images/i (9).webp" alt="Новый врач">
+          <h3>Новый детский терапевт</h3>
+          <p>В нашу команду пришёл опытный педиатр с 10-летним стажем.</p>
+          <a href="#">Читать →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <h4>Контакты</h4>
+        <p>г. Москва, ул. Здоровья, 10</p>
+        <p>+7 (495) 123-45-67</p>
+        <p>info@cityhospital.ru</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="appointment.html">Запись</a></li>
+          <li><a href="personal.html">Моя карта</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2024 Городская больница</div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modalLogin" class="modal">
+    <div class="modal__content">
+      <span class="modal__close" data-close="modalLogin">&times;</span>
+      <h3>Вход</h3>
+      <form id="formLogin">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Пароль" required>
+        <button class="btn btn--primary">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modalRegister" class="modal">
+    <div class="modal__content">
+      <span class="modal__close" data-close="modalRegister">&times;</span>
+      <h3>Регистрация</h3>
+      <form id="formRegister">
+        <input type="text" id="regName" placeholder="ФИО" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Пароль" required>
+        <button class="btn btn--primary">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modalEdit" class="modal">
+    <div class="modal__content">
+      <span class="modal__close" data-close="modalEdit">&times;</span>
+      <h3>Изменить запись</h3>
+      <form id="formEdit">
+        <input type="hidden" id="editIndex">
+        <label>Дата:<input type="date" id="editDate" required></label>
+        <label>Время:<input type="time" id="editTime" min="08:00" max="17:00" required></label>
+        <button class="btn btn--primary">Сохранить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

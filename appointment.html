@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Услуги – Городская больница</title>
+  <title>Запись – Городская больница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +12,14 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- HEADER (тот же, что в index.html) -->
+  <!-- HEADER -->
   <header class="header">
     <div class="container header__inner">
       <a href="index.html" class="logo">Городская больница</a>
       <nav class="nav">
         <a href="index.html" class="nav__link">Главная</a>
-        <a href="services.html" class="nav__link active">Услуги</a>
-        <a href="appointment.html" class="nav__link">Запись</a>
+        <a href="services.html" class="nav__link">Услуги</a>
+        <a href="appointment.html" class="nav__link active">Запись</a>
         <a href="personal.html" class="nav__link nav__link--auth">Моя карта</a>
         <a href="about.html" class="nav__link">О нас</a>
       </nav>
@@ -33,50 +33,24 @@
 
   <!-- MAIN -->
   <main class="container">
-    <h1>Наши услуги</h1>
-    <ul class="services-list">
-      <li>Терапия</li>
-      <li>Кардиология</li>
-      <li>Неврология</li>
-      <li>Хирургия</li>
-      <li>Лабораторная диагностика</li>
-    </ul>
-
-    <h2>Наши врачи</h2>
-    <div class="doctors">
-      <div class="doctor">
-        <img src="images/2014759.jpg" alt="Иванов">
-        <h4> Иванов А. К</h4><p>Терапевт</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i.webp" alt="Петров">
-        <h4> Петров К.Г.</h4><p>Кардиолог</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i (6).webp" alt="Сидоров">
-        <h4> Сидоров В.В.</h4><p>Невролог</p>
-      </div>
-      <div class="doctor">
-        <img src="images/XXXL.webp" alt="Кузнецова">
-        <h4> Кузнецова А.С.</h4><p>Хирург</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i (7).webp" alt="Смирнова">
-        <h4> Смирнова Н.А.</h4><p>Лаборант</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i (8).webp" alt="Новиков">
-        <h4> Новиков А.М.</h4><p>Кардиолог</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i (9).webp" alt="Алексеева">
-        <h4> Алексеева М.В.</h4><p>Педиатр</p>
-      </div>
-      <div class="doctor">
-        <img src="images/i (10).webp" alt="Морозов">
-        <h4> Морозов П.Д</h4><p>Отоларинголог</p>
-      </div>
-    </div>
+    <h1>Запись на приём</h1>
+    <form id="formAppointment" class="form-appointment">
+      <label>Врач:
+        <select id="inpDoctor" required>
+          <option value="">– выберите –</option>
+        </select>
+      </label>
+      <label>Дата:
+        <input type="date" id="inpDate" required>
+      </label>
+      <label>Время (8:00–17:00):
+        <input type="time" id="inpTime" min="08:00" max="17:00" required>
+      </label>
+      <label>Жалоба:
+        <textarea id="inpComplaint" rows="3" required></textarea>
+      </label>
+      <button class="btn btn--primary">Записаться</button>
+    </form>
   </main>
 
   <!-- FOOTER & MODALS -->
@@ -102,7 +76,6 @@
     <div class="footer__bottom">© 2024 Городская больница</div>
   </footer>
 
-  <!-- MODALS -->
   <div id="modalLogin" class="modal">
     <div class="modal__content">
       <span class="modal__close" data-close="modalLogin">&times;</span>
